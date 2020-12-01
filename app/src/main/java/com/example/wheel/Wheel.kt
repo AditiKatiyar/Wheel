@@ -27,6 +27,7 @@ class Wheel @JvmOverloads constructor(
         style = Paint.Style.STROKE
         strokeWidth = STROKE_WIDTH
         color = ContextCompat.getColor(getContext(), R.color.green)
+        strokeCap = Paint.Cap.ROUND
     }
     private val magentaCirclePaint = Paint(Paint.ANTI_ALIAS_FLAG).apply {
         color = ContextCompat.getColor(getContext(), R.color.magenta)
