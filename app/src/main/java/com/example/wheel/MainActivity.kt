@@ -17,7 +17,7 @@ class MainActivity : AppCompatActivity() {
 
         applyButton.setOnClickListener {
             val progress = progressEditText.text.toString()
-            if (progress.isNotEmpty() && progress.toInt() <= 100 && progress.toInt() >= 0) {
+            if (progress.isNotEmpty() && progress.toInt() <= 360 && progress.toInt() >= 0) {
                 val animation = WheelAnimation(wheel, progress.toFloat()).apply {
                     duration = 3000
                 }

@@ -1,5 +1,5 @@
 <resources>
     <string name="app_name">Wheel</string>
-    <string name="error_message">Please enter the progress between 0 and 100.</string>
+    <string name="error_message">Please enter the angle between 0 and 360.</string>
     <string name="apply">APPLY</string>
 </resources>

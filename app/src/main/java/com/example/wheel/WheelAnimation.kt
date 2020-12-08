@@ -10,7 +10,7 @@ class WheelAnimation(private val wheel: Wheel, private val progress: Float) : An
     }
 
     override fun applyTransformation(interpolatedTime: Float, transformation: Transformation?) {
-        val angle: Float = progress / 100 * 360 * interpolatedTime
+        val angle: Float = progress * interpolatedTime
         wheel.setSweepAngle(angle)
         wheel.requestLayout()
     }

@@ -53,6 +53,7 @@ class Wheel @JvmOverloads constructor(
     override fun onDraw(canvas: Canvas) {
         super.onDraw(canvas)
 
+        sweepAngle *= -1
         // draw grey ring
         canvas.drawArc(mRect, startAngle, 360F, false, greyRingPaint)
         // draw green arc
